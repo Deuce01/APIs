@@ -26,7 +26,7 @@ This repository serves as a roadmap for learning and building Python APIs. We wi
 | API Name              | Description                             | Status        |
 |-----------------------|-----------------------------------------|---------------|
 | **To-Do List API**     | A basic API for managing tasks          | ✅ Completed  |
-| **[Next API Placeholder]** | API description here                   | ⏳ In Progress |
+| **Weather API**        | A simple API for fetching weather data  | ✅ Completed  |
 
 Feel free to follow along and contribute!
 
@@ -38,13 +38,12 @@ Feel free to follow along and contribute!
 
 - Python 3.x
 - Flask
+- [OpenWeatherMap API Key](https://openweathermap.org/api) (for the Weather API)
 
 ### Steps
 
 1. **Clone the repository**:
   
-   cd python-api-roadmap
-   ```
 
 2. **Create and activate a virtual environment**:
    ```bash
@@ -54,7 +53,7 @@ Feel free to follow along and contribute!
 
 3. **Install dependencies**:
    ```bash
-   pip install Flask
+   pip install Flask requests
    ```
 
 4. **Run the desired API**:
@@ -79,18 +78,45 @@ Feel free to follow along and contribute!
 | POST   | `/tasks`        | Add a new task           |
 | DELETE | `/tasks/<id>`   | Delete task by ID        |
 
+---
 
+### **Weather API** (Completed ✅)
+
+- **Description**: A simple API that fetches the current weather data for a specified city using the OpenWeatherMap API.
+  
+#### Endpoints:
+
+| Method | Endpoint                  | Description                    |
+|--------|----------------------------|---------------------------------|
+| GET    | `/weather?city=<city_name>` | Fetch weather data for a city   |
+
+#### Example Usage:
+- Fetch weather for Nairobi:
+  ```bash
+  curl "http://127.0.0.1:5000/weather?city=Nairobi"
+  ```
+
+---
 
 ## 🤝 Contributing
 
 Contributions are welcome! If you have any suggestions, feel free to create an issue or submit a pull request.
 
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Commit your changes (`git commit -m 'Add new API feature'`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Open a pull request.
+
+---
 
 
 ---
 
 <p align="center">
-  Made with ❤️ by Victor Chege and Contributors
+  Made with ❤️ by Victor Chege.
 </p>
 
+---
 
+This updated version now includes the **Weather API** and keeps the structure clean and modular for future API additions. Each time you add a new API, just follow this format for documentation!
