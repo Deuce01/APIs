@@ -117,6 +117,3 @@ Contributions are welcome! If you have any suggestions, feel free to create an i
   Made with ❤️ by Victor Chege.
 </p>
 
----
-
-This updated version now includes the **Weather API** and keeps the structure clean and modular for future API additions. Each time you add a new API, just follow this format for documentation!
